@@ -1,11 +1,11 @@
-= Modified Palindrome =
+# Modified Palindrome
 
-== Definitions ==
+## Definitions
 A palindrome is a word that is read the same in both directions
 * Example (Palindrome): eye, madam, racecar, noon
 * Example (Non Palindrome): test, abc, anything
 
-== Task ==
+## Task
 1. Implement a modified palindrome where it is case insensitive and ignores any non-alphanumeric characters
  * Examples: _!E#@y#e
  * MaDaM!!

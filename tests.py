@@ -38,7 +38,7 @@ class TestModifiedPalindrom(unittest.TestCase):
         """
         Test a modified palindrome
         """
-        string_to_test = 'a'*499999999 + 'b' + 'a'*499999999
+        string_to_test = 'a'*499999999 + 'bbb' + 'a'*499999999
         result = runner.invoke(isPalindrome, ['-w', string_to_test])
         self.assertEqual(result.output, "Is a palindrome\n")
 
@@ -75,7 +75,7 @@ class TestModifiedPalindrom(unittest.TestCase):
         """
         Test a modified palindrome
         """
-        string_to_test = 'a'*499999999 + 'b' + 'a'*499999999 + 'b'
+        string_to_test = 'a'*499999999 + 'bbb' + 'a'*499999999 + 'b'
         result = runner.invoke(isPalindrome, ['-w', string_to_test])
         self.assertEqual(result.output, "Not a palindrome\n")
 

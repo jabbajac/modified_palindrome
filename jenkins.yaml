@@ -1,0 +1,16 @@
+pipeline:
+  agent: 
+    docker:
+      image: 'python:alpine3.7'
+  stages:
+    - stage: 
+      - name: build
+        steps: sh 'pip3 install requirements.txt'
+    - stage: 
+      - name: test
+        steps: sh 'python3 pytest.py'
+    - stage:
+      - name: deploy
+        steps: sh 'docker build -t modified_palindrome:latest'
+    
+        

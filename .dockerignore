@@ -1,0 +1,7 @@
+__pycache__
+*.__pycache__*.pyo
+*.pyd
+.vscode
+build*
+.gitignore
+*.egg-info
